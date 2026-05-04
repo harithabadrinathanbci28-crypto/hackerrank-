@@ -1,0 +1,6 @@
+mobile = input().strip()
+
+if len(mobile) == 10 and mobile.isdigit() and mobile[0] in ['7','8','9']:
+    print("YES")
+else:
+    print("NO")
