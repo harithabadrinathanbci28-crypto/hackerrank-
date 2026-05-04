@@ -1,0 +1,16 @@
+def merge_the_tools(string, k):
+    s = string
+    n = len(s)
+    sn = n//k
+    ss = []
+    for x in range(0, n, k):
+        ss.append(s[x:(x + k)])
+    for x in range(sn):
+        sss = []
+        for y in range(k):
+            if ss[x][y] not in sss:
+                sss.append(ss[x][y])
+        print(''.join(sss))
+if __name__ == '__main__':
+    string, k = input(), int(input())
+    merge_the_tools(string, k)
