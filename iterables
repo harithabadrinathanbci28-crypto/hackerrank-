@@ -1,0 +1,1 @@
+from itertools import combinations N=int(input()) l=list(input().split()) k=int(input()) total=0 count=0 for i in combinations(l,k): total+=1 if 'a' in i: count+=1 print(f"{(count/total):.3f}")
