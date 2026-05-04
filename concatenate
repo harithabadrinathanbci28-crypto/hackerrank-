@@ -1,0 +1,7 @@
+import numpy
+
+if __name__ == "__main__":
+    n,m,p = input().split()
+    arr_1 = [[int(x) for x in input().split()] for _ in range(int(n))]
+    arr_2 = [[int(x) for x in input().split()] for _ in range(int(m))]
+    print(numpy.concatenate((arr_1, arr_2)))
