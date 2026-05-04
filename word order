@@ -1,0 +1,9 @@
+import sys from collections import Counter n = input()
+
+inputs = sys.stdin.read().split()
+
+frequency = Counter(inputs)
+
+print(len(frequency))
+
+for key in frequency: print(frequency[key], end = " ")
