@@ -1,0 +1,1 @@
+print(pow(sum(list(map(pow,[10]*i,range(i-1,-1,-1)))),2))
