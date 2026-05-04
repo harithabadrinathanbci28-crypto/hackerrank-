@@ -1,0 +1,8 @@
+def array(arr):
+    newArr = np.array(arr,dtype="int")
+    return np.reshape(newArr,(3,3))
+    
+
+arr = input().strip().split(" ")
+
+print(array(arr))
