@@ -1,0 +1,17 @@
+if __name__ == '__main__':
+    n = int(input())
+    print_rangoli(n)
+def print_rangoli(size):
+    n = size
+    m = n + (n - 1) + ((n - 1) * 2)
+    a = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+    b = a[:n]
+    c = b[::-1]
+    for x in range(n):
+        d = c[:(x)] + b[(n - 1 - x):]
+        s = '-'.join(d)
+        print(s.center(m, '-'))
+    for x in reversed(range(n - 1)):
+        d = c[:(x)] + b[(n - 1 - x):]
+        s = '-'.join(d)
+        print(s.center(m, '-'))
