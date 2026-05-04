@@ -1,0 +1,8 @@
+import re
+
+N = int(input()) for _ in range(N): S = input() pack = re.match(r'((\d){4}-?){4}$',S) start = re.match(r'[456]',S)
+
+if pack and start and not re.search(r'(\d)\1{3}',S.replace("-","")):
+    print("Valid")
+else:
+    print("Invalid")
