@@ -1,0 +1,10 @@
+def is_strict_superset(A,B):
+    return( A.intersection(B)==B and len(A.difference(B)) > 0)
+
+superset = set(map(int,input().split()))
+num_sets = int(input())
+result = True
+for _ in range(num_sets):
+    other_set = set(map(int, input().split()))
+    result = result and is_strict_superset(superset, other_set)
+print(result)
