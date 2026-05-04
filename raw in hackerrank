@@ -1,0 +1,9 @@
+Problem Setter's code:
+
+import re
+
+for line in range(int(raw_input())):
+    string = ''
+    string = re.sub(r'(?<= )&&(?= )','and',raw_input())
+    string = re.sub(r'(?<= )\|\|(?= )','or',string)
+    print string
