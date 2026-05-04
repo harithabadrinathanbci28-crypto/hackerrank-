@@ -1,0 +1,5 @@
+import re
+
+def score_words(words): return sum((lambda c: 2 if c % 2 == 0 else 1)(len(re.findall(r'[aeiouy]', word))) for word in words)
+
+n=input() words=input().strip().split() print(score_words(words))
