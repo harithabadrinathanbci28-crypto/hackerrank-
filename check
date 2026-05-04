@@ -1,0 +1,13 @@
+def A_is_subset_of_B(set_A,set_B):
+    for ele in set_A:
+        if ele not in set_B:
+            return print("False")   
+    print("True")
+
+testcases= int(input())
+for _ in range(testcases):
+    num_ele_A = int(input())
+    set_A = set(map(int, input().split()))
+    num_ele_B = int(input())
+    set_B = set(map(int, input().split()))
+    A_is_subset_of_B(set_A,set_B)
